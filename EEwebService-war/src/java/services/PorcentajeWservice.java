@@ -7,9 +7,17 @@ import javax.jws.WebParam;
 @WebService(serviceName = "PorcentajeWservice")
 public class PorcentajeWservice {
 
-    @WebMethod(operationName = "hello")
-    public String hello(@WebParam(name = "name") String txt) {
-        return "Hello " + txt + " !";
+    /**
+     * Web service operation
+     */
+    @WebMethod(operationName = "calcularIva")
+    public float calcularIva(@WebParam(name = "valor") float valor, @WebParam(name = "porcentaje") float porcentaje) {
+        float resultado = (valor+(valor*(porcentaje/100)));
+        return resultado;
     }
+
+ 
+
+   
 }
     

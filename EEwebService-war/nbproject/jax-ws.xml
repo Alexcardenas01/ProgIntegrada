@@ -4,6 +4,12 @@
     <service name="PorcentajeWservice">
       <implementation-class>services.PorcentajeWservice</implementation-class>
     </service>
+    <service name="SumarProductos">
+      <implementation-class>services.SumarProductos</implementation-class>
+    </service>
+    <service name="SumarCompleto">
+      <implementation-class>services.SumarCompleto</implementation-class>
+    </service>
   </services>
   <clients/>
 </jax-ws>

@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<catalog xmlns="urn:oasis:names:tc:entity:xmlns:xml:catalog" prefer="system">
+    <system systemId="http://localhost:8080/EEwebService-war/PorcentajeWservice?wsdl" uri="src/conf/xml-resources/web-service-references/PorcentajeWservice/wsdl/localhost_8080/EEwebService-war/PorcentajeWservice.wsdl"/>
+    <system systemId="http://localhost:8080/EEwebService-war/PorcentajeWservice?xsd=1" uri="src/conf/xml-resources/web-service-references/PorcentajeWservice/wsdl/localhost_8080/EEwebService-war/PorcentajeWservice.xsd_1.xsd"/>
+    <system systemId="http://localhost:8080/EEwebService-war/SumarProductos?wsdl" uri="src/conf/xml-resources/web-service-references/SumarProductos/wsdl/localhost_8080/EEwebService-war/SumarProductos.wsdl"/>
+    <system systemId="http://localhost:8080/EEwebService-war/SumarProductos?xsd=1" uri="src/conf/xml-resources/web-service-references/SumarProductos/wsdl/localhost_8080/EEwebService-war/SumarProductos.xsd_1.xsd"/>
+    <system systemId="http://localhost:8080/EEwebService-war/SumarCompleto?wsdl" uri="src/conf/xml-resources/web-service-references/SumarCompleto/wsdl/localhost_8080/EEwebService-war/SumarCompleto.wsdl"/>
+    <system systemId="http://localhost:8080/EEwebService-war/SumarCompleto?xsd=1" uri="src/conf/xml-resources/web-service-references/SumarCompleto/wsdl/localhost_8080/EEwebService-war/SumarCompleto.xsd_1.xsd"/>
+</catalog>
