@@ -6,4 +6,5 @@
     <system systemId="http://localhost:8080/EEwebService-war/SumarProductos?xsd=1" uri="wsdl/localhost_8080/EEwebService-war/SumarProductos.xsd_1.xsd"/>
     <system systemId="http://localhost:8080/EEwebService-war/SumarCompleto?wsdl" uri="wsdl/localhost_8080/EEwebService-war/SumarCompleto.wsdl"/>
     <system systemId="http://localhost:8080/EEwebService-war/SumarCompleto?xsd=1" uri="wsdl/localhost_8080/EEwebService-war/SumarCompleto.xsd_1.xsd"/>
+    <system systemId="http://localhost:8080/IvaWs/IvaWs?wsdl" uri="wsdl/localhost_8080/IvaWs/IvaWs.wsdl"/>
 </catalog>

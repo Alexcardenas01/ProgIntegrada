@@ -10,6 +10,15 @@
     <service name="SumarCompleto">
       <implementation-class>services.SumarCompleto</implementation-class>
     </service>
+    <service name="SumaFinalWs">
+      <implementation-class>services.SumaFinalWs</implementation-class>
+    </service>
+    <service name="IvaWs">
+      <implementation-class>services.IvaWs</implementation-class>
+    </service>
+    <service name="SumaWs">
+      <implementation-class>services.SumaWs</implementation-class>
+    </service>
   </services>
   <clients/>
 </jax-ws>

@@ -75,5 +75,39 @@
         <delete dir="${build.generated.dir}/jax-wsCache/SumarCompleto"/>
         <delete dir="${build.generated.sources.dir}/jax-ws/services"/>
     </target>
-    <target name="wsimport-client-generate" depends="wsimport-client-PorcentajeWservice, wsimport-client-SumarProductos, wsimport-client-SumarCompleto"/>
+    <target name="wsimport-client-IvaWs" depends="wsimport-init">
+        <mkdir dir="${build.generated.dir}/jax-wsCache/IvaWs"/>
+        <property name="wsdl-IvaWs" location="${meta.inf}/xml-resources/web-service-references/IvaWs/wsdl/localhost_8080/IvaWs/IvaWs.wsdl"/>
+        <wsimport sourcedestdir="${build.generated.dir}/jax-wsCache/IvaWs" destdir="${build.generated.dir}/jax-wsCache/IvaWs" wsdl="${wsdl-IvaWs}" catalog="catalog.xml" encoding="${source.encoding}" extension="true" verbose="true" fork="false" wsdlLocation="http://localhost:8080/IvaWs/IvaWs?wsdl" xnocompile="true" xendorsed="true">
+            <depends file="${wsdl-IvaWs}"/>
+            <produces dir="${build.generated.dir}/jax-wsCache/IvaWs"/>
+        </wsimport>
+        <copy todir="${build.generated.sources.dir}/jax-ws">
+            <fileset dir="${build.generated.dir}/jax-wsCache/IvaWs">
+                <include name="**/*.java"/>
+            </fileset>
+        </copy>
+    </target>
+    <target name="wsimport-client-clean-IvaWs" depends="-init-project">
+        <delete dir="${build.generated.dir}/jax-wsCache/IvaWs"/>
+        <delete dir="${build.generated.sources.dir}/jax-ws/services"/>
+    </target>
+    <target name="wsimport-client-IvaWs_1" depends="wsimport-init">
+        <mkdir dir="${build.generated.dir}/jax-wsCache/IvaWs_1"/>
+        <property name="wsdl-IvaWs_1" location="${meta.inf}/xml-resources/web-service-references/IvaWs_1/wsdl/localhost_8080/IvaWs/IvaWs.wsdl"/>
+        <wsimport sourcedestdir="${build.generated.dir}/jax-wsCache/IvaWs_1" destdir="${build.generated.dir}/jax-wsCache/IvaWs_1" wsdl="${wsdl-IvaWs_1}" catalog="catalog.xml" encoding="${source.encoding}" extension="true" verbose="true" fork="false" wsdlLocation="http://localhost:8080/IvaWs/IvaWs?wsdl" xnocompile="true" xendorsed="true">
+            <depends file="${wsdl-IvaWs_1}"/>
+            <produces dir="${build.generated.dir}/jax-wsCache/IvaWs_1"/>
+        </wsimport>
+        <copy todir="${build.generated.sources.dir}/jax-ws">
+            <fileset dir="${build.generated.dir}/jax-wsCache/IvaWs_1">
+                <include name="**/*.java"/>
+            </fileset>
+        </copy>
+    </target>
+    <target name="wsimport-client-clean-IvaWs_1" depends="-init-project">
+        <delete dir="${build.generated.dir}/jax-wsCache/IvaWs_1"/>
+        <delete dir="${build.generated.sources.dir}/jax-ws/services"/>
+    </target>
+    <target name="wsimport-client-generate" depends="wsimport-client-PorcentajeWservice, wsimport-client-SumarProductos, wsimport-client-SumarCompleto, wsimport-client-IvaWs, wsimport-client-IvaWs_1"/>
 </project>
