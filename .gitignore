@@ -1,0 +1,6 @@
+/build/
+/dist/
+/EEwebService-ejb/dist/
+/EEwebService-ejb/build/
+/EEwebService-war/build/
+/EEwebService-war/dist/

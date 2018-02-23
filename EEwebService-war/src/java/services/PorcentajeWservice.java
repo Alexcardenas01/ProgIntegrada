@@ -12,3 +12,4 @@ public class PorcentajeWservice {
         return "Hello " + txt + " !";
     }
 }
+    
